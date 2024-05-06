@@ -10,16 +10,8 @@ pool:
   name: myvm
 
 steps:
-
 - task: Npm@1
   inputs:
     command: 'install'
-    workingDir: '/home/amit/dist'
     customRegistry: 'useFeed'
     customFeed: 'b5b2b127-52e2-4b2f-b5ef-2e7a4b2b328d'
-- task: Npm@1
-  inputs:
-    command: 'publish'
-    workingDir: '/home/amit/dist'
-    publishRegistry: 'useFeed'
-    publishFeed: 'b5b2b127-52e2-4b2f-b5ef-2e7a4b2b328d'
